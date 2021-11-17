@@ -80,6 +80,10 @@ footer {
     color: #8300bf;
 }
 /*Home Section*/
+#home{
+    background-image: url(/docs/images/PurpleSplash.webp);
+    background-size: cover;
+}
 .shape p{
     margin-top: 0;
     padding: 0;
@@ -170,8 +174,4 @@ input[type=submit]:hover {
       padding-right: 5%;
       padding-top: 10px;
       padding-bottom: 10px;
-}
-#home{
-    background-image: url(/docs/images/PurpleSplash.webp);
-    background-size: cover;
 }
