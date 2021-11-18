@@ -119,20 +119,127 @@ footer {
     flex-direction: column;
 }
 /*Skills Section*/
-.column {
+.skillColumn {
     float: left;
     width: 20%;
     padding: 2.5%;
     max-width: 150px;
 }
-  
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+/* Work Section */
+.workSection{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
- /* Work Section */
-
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+}
+.column {
+    border-radius: 5px;
+}
+.containerTab {
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.closebtn {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn1{
+    background-image: url(/docs/images/PurplePixels.webp);
+}
+.btn2{
+    background-image: url();
+}
+.btn3{
+    background-image: url();
+}
+#b1{
+    background-image: url(/docs/images/PurpleHallWay.webp);
+}
+#b2{
+    background-image: url();
+}
+#b3{
+    background-image: url();
+}
+.card{
+    border: purple 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none !important;
+    color: white;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10rem 0 0;
+    transition: transform 500ms ease;
+}
+.cardContainer{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(255 50% 0% / .5) 20%, hsl(0 0% 0% / 1));
+}
+.cardContainer{
+    transform: translateY(10%);
+    transition: transform 500ms ease;
+    width: 100%;
+}
+.card:hover{
+        transform: scale(1.05);
+}
+.card:hover .card-title::after{
+        transform: scaleX(1);
+}
+.card:hover .cardContainer{
+        transform: translateY(0);
+}
+.card:hover .cardContainer > *{
+        opacity: 1;
+        transition: opacity 500ms linear;
+        transition-delay: 300ms;
+}
+.cardContainer > *:not(.card-title){
+        opacity: 0;
+        transition-delay: 1000ms;
+}
+#work1{
+    background-image: url(/docs/Images/KZ650/First.jpg);
+    background-size: cover;
+}
+#work2{
+    background-image: url(/docs/Images/KZ650/Second.jpg);
+    background-size: cover;
+}
+#work3{
+    background-image: url(/docs/Images/KZ650/Third.jpg);
+    background-size: cover;
+}
+.card-title{
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    padding-bottom: 5px;
+}
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: calc(var(--padding) * -1);
+    background: purple;
+    width: calc(100% + var(--padding));
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 300ms ease;
+    transform-origin: left;
+}
 /*Contact Section*/
 input[type=text], select, textarea {
     width: 100%;

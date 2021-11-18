@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" media="screen and (min-width: 770px)" href="/style.css">
     <link rel="stylesheet" media="screen and (max-width: 769px)" href="/mstyle.css"> -->
     <link rel="stylesheet" href="/style.css">
+    <script src="main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&=Dancing+Script&family=swap" rel="stylesheet">
@@ -33,24 +34,60 @@
         <section id="about">
             <h1>About Me</h1>
             <h1>Skills</h1>
-            <div class="row">
-                <div class="column">
+            <div class="skillRow">
+                <div class="skillColumn">
                   <img src="/docs/images/Logos/html-1.svg" alt="HTML logo" style="width:100%">
                 </div>
-                <div class="column">
+                <div class="skillColumn">
                   <img src="/docs/images/Logos/css-3.svg" alt="CSS logo" alt="Forest" style="width:100%">
                 </div>
-                <div class="column">
+                <div class="skillColumn">
                   <img src="/docs/images/Logos/javascript-1.svg" alt="JS logo" style="width:100%">
                 </div>
-                <div class="column">
+                <div class="skillColumn">
                     <img src="/docs/images/Logos/git-icon.svg" alt="GIT logo" style="width:100%">
                   </div>
               </div>
         </section>
         <section id="work">
             <h1>Work</h1>
-            
+            <div class="workSection">
+                <div class="row">
+                    <div class="card column btn1" id="work1" onclick="openTab('b1');">
+                        <div class="cardContainer">
+                        <h4 class="card-title"><b>Portfolio Assignment</b></h4>
+                        </div>
+                    </div>
+                    <div class="card column btn2" id="work2" onclick="openTab('b2');">
+                        <div class="cardContainer">
+                        <h4 class="card-title"><b>Nocturnal Media</b></h4>
+                        </div>
+                    </div>
+                    <div class="card column btn3" id="work3" onclick="openTab('b3');">
+                        <div class="cardContainer">
+                        <h4 class="card-title"><b>Nocturnal Design Co</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="b1" class="containerTab" style="display:none;">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                    <h2>Portfolio Assignment</h2>
+                    <p>An assignment I just completed at Coder Academy, where I had to meet a brief.</p>
+                </div>
+                
+                <div id="b2" class="containerTab" style="display:none;">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                    <h2>Nocturnal Media</h2>
+                    <p>Re-designing a website for a Graphic Designer based in Brisbane</p>
+                </div>
+                
+                <div id="b3" class="containerTab" style="display:none();">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                    <h2>Nocturnal Design Co.</h2>
+                    <p>Creating a ECommerce website for a clothing and apparel brand</p>
+                </div>
+            </div>
         </section>
         <section id="contact">
             <div class="contactform form-container">
