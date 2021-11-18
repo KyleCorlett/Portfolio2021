@@ -1,3 +1,11 @@
+*{
+    --primary: #000; 
+    --secondary: #87CBAC;
+    --highlight: #90FFDC;
+    --outline: #8DE4FF;
+    --wrong: #8AC4FF;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -5,7 +13,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(124, 2, 71);
+    background: var(--primary);
     color: white;
     line-height: 1.6;
     height: 100vh;
@@ -56,7 +64,7 @@ footer {
     z-index: 2;
     width: 100%;
     height: 60px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: var(--secondary);
 }
 
 .navbar ul {
@@ -77,13 +85,9 @@ footer {
     color: #f4f4f4;
 }
 .navbar ul li a:hover {
-    color: #8300bf;
+    color: var(--outline);
 }
 /*Home Section*/
-#home{
-    background-image: url(/docs/images/PurpleSplash.webp);
-    background-size: cover;
-}
 .shape p{
     margin-top: 0;
     padding: 0;
@@ -96,7 +100,7 @@ footer {
     position: relative;
     width: 100%;
     height: 290px;
-    background: rgb(44, 8, 43);
+    background: var(--secondary);
 }
 .shape:after {
     position: absolute;
@@ -118,7 +122,44 @@ footer {
     justify-content: center;
     flex-direction: column;
 }
-/*Skills Section*/
+/*Skills/About Section*/
+.aboutContainer{
+    display: flex;
+}
+.aboutCard{
+    border: var(--outline) 1px solid;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    margin: 0 5px;
+    padding: 3% 1%;
+    transition: transform 500ms ease;
+    overflow: hidden;
+    background-image: linear-gradient(90deg,
+        var(--primary) 0%,
+        var(--primary) 50%,
+        var(--secondary) 50%,
+        var(--secondary) 100%);
+    background-size: 400%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+      color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+}
+
+.aboutCard:hover {
+    color: white;
+    background-position: -50% 100%;
+}
+.aboutInfo{
+    width: 100%;
+    text-align: center;
+}
+#about p{
+    font-size: 20px;
+}
+#about h2{
+    text-decoration: underline;
+}
 .skillColumn {
     float: left;
     width: 20%;
@@ -155,24 +196,30 @@ footer {
 }
 .btn1{
     background-image: url(/docs/images/PurplePixels.webp);
+    background-size: cover;
 }
 .btn2{
     background-image: url();
+    background-size: cover;
 }
 .btn3{
     background-image: url();
+    background-size: cover;
 }
 #b1{
     background-image: url(/docs/images/PurpleHallWay.webp);
+    background-size: cover;
 }
 #b2{
     background-image: url();
+    background-size: cover;
 }
 #b3{
     background-image: url();
+    background-size: cover;
 }
 .card{
-    border: purple 1px solid;
+    border: var(--outline) 1px solid;
     border-radius: 5px;
     overflow: hidden;
     text-decoration: none !important;
@@ -233,7 +280,7 @@ footer {
     position: absolute;
     height: 3px;
     left: calc(var(--padding) * -1);
-    background: purple;
+    background: var(--highlight);
     width: calc(100% + var(--padding));
     bottom: 0;
     transform: scaleX(0);
@@ -244,7 +291,7 @@ footer {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #8300bf;
+    border: 2px solid var(--outline);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -256,13 +303,13 @@ input[type=submit] {
     background-color: black;
     color: white;
     padding: 12px 20px;
-    border: 2px solid #8300bf;
+    border: 2px solid var(--outline);
     border-radius: 4px;
     cursor: pointer;
 }
   
 input[type=submit]:hover {
-    background-color: #8300bf;
+    background-color: var(--secondary);
 }
 .contactform {
       display: flex;
