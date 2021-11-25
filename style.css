@@ -291,7 +291,7 @@ footer {
     transition: transform 500ms ease;
 }
 .cardContainer{
-    --padding: 1.5rem;
+    --padding: 3rem;
     padding: var(--padding);
     background: linear-gradient(hsl(0 0% 0% / 0), hsl(255 50% 0% / .5) 20%, hsl(0 0% 0% / 1));
     transform: translateY(10%);
@@ -317,11 +317,11 @@ footer {
         transition-delay: 1000ms;
 }
 #work1{
-    background-image: url(/docs/Images/KZ650/First.jpg);
+    background-image: url(/docs/images/Github_screen.webp);
     background-size: cover;
 }
 #work2{
-    background-image: url(/docs/Images/KZ650/Second.jpg);
+    background-image: url(/docs/images/LinkedIn.webp);
     background-size: cover;
 }
 #work3{
@@ -354,7 +354,6 @@ input[type=text], select, textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
 }
   
@@ -380,6 +379,8 @@ input[type=submit]:hover {
       backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
       font-family: 'Dancing Script', cursive;
       font-size: large;
+      margin-top: 5rem;
+      margin-bottom: 0;
 }
 .form {
       max-width: 600px;
