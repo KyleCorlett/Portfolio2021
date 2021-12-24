@@ -218,8 +218,8 @@ footer {
 }
 .skillColumn {
     float: left;
-    width: 20%;
-    padding: 2.5%;
+    width: 17%;
+    padding: 1.5%;
     max-width: 150px;
 }
 /* Work Section */
@@ -325,7 +325,7 @@ footer {
     background-size: cover;
 }
 #work3{
-    background-image: url(/docs/Images/KZ650/Third.jpg);
+    background-image: url(/docs/Images/Nocturnal_Media.webp);
     background-size: cover;
 }
 .card-title{
